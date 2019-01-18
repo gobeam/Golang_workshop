@@ -14,7 +14,6 @@ func main() {
 	// In map we can have key of different data type and value of different data type
 	// Simply saying what map does is that it maps keys to values
 
-
 	// Empty map example
 	emptyMap := make(map[string]int)
 
@@ -30,8 +29,6 @@ func main() {
 
 	fmt.Println("\n mapWithSize: ", mapWithSize)
 
-
-
 	//Maps can be created using builtin make function
 	map1 := make(map[string]int)
 	map1["dog"] = 42
@@ -39,40 +36,31 @@ func main() {
 
 	fmt.Println("\n map1: ", map1)
 
-
-
 	// Map can contain structs as value
 	//This type of map is called literal map
 	map2 := map[string]info{
-		"Roll01" : {
-			Name:"Roshan Rana Bhat",
+		"Roll01": {
+			Name:    "Roshan Rana Bhat",
 			Address: "Naxal",
 		},
 	}
 
 	fmt.Println("\n map2: ", map2)
 
-
-
 	// map also can be made using builtin make
 	map3 := map[string]info{}
 	map3["Roll02"] = info{
-		Name: "Tom Holland",
+		Name:    "Tom Holland",
 		Address: "USA",
 	}
 
 	fmt.Println("\n map3: ", map3)
 
-
 	// Length of map
 	fmt.Println("\n Length of mapWithSize is: ", len(mapWithSize))
-
 
 	//delete map elements
 	delete(mapWithSize, "test2")
 	fmt.Println("\n mapWithSize after deleting element: ", mapWithSize)
-
-
-
 
 }
