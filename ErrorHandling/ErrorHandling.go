@@ -15,7 +15,6 @@ func main(){
 	}
 
 	fmt.Println("\n ", val)
-
 }
 
 
