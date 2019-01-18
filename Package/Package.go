@@ -14,4 +14,9 @@ fmt.Println("/n addition result is: ", result)
 
 // we canot import subtract method from subtract package because it has no public access
 
+//we can import multiplepackage by
+//	import (
+//		"fmt"
+//	"os"
+//	)
 }
